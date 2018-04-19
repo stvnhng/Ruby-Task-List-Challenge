@@ -51,7 +51,7 @@ describe TaskList do
 
   it "get incomplete items" do
     taskList = TaskList.new
-    
+
     task1 = Task.new("T1","D1")
     task1.taskDone
     taskList.add_to_list(task1)

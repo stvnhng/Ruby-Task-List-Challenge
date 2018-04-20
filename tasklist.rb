@@ -9,8 +9,7 @@
 
 # Starting User Stories
 # Story: As a developer, I can create a Task.
-
-house_chores = ["do laundry", "fold clothes", "wash dishes"]
+require 'Date'
 
 
 class TaskList
@@ -19,7 +18,7 @@ class TaskList
   end
 
   def list_tasks
-    p @list
+      @list
   end
 
   def add_to_list(task)
@@ -36,6 +35,10 @@ class TaskList
     result = @list.select do |task|
       task.get_task_status == "not done"
     end
+  end
+
+  def
+
   end
 
 end
@@ -58,6 +61,7 @@ class Task
     @status
   end
 end
+
 
 
 # Story: As a developer, I can give a Task a title and retrieve it.
